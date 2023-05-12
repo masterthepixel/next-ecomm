@@ -23,8 +23,8 @@ const Products = ({ products }) => {
                   className='h-full w-full object-cover object-center transition-opacity group-hover:opacity-75'
                 />
               </div>
-              <h3 className='mt-4 text-sm text-stone-700'>{product.name}</h3>
-              <p className='mt-1 text-lg font-medium text-stone-900'>
+              <h3 className='mt-4 text-sm text-zinc-700'>{product.name}</h3>
+              <p className='mt-1 text-lg font-medium text-zinc-900'>
                 {formatCurrency({ amount: product.price })}
               </p>
             </Link>

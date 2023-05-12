@@ -1,12 +1,12 @@
 const Footer = () => {
   return (
-    <footer className='z-10 py-10 text-stone-400'>
+    <footer className='z-10 py-10 text-zinc-400'>
       <div className='container'>
         <h5 className='text-lg'>CAFE CO.</h5>
-        <p className='mt-4 text-sm text-stone-500'>
+        <p className='mt-4 text-sm text-zinc-500'>
           &copy; {new Date().getFullYear()} Cafe Co.
         </p>
-        <div className='text-sm text-stone-400'>
+        <div className='text-sm text-zinc-400'>
           Developed by{' '}
           <a
             className='text-sky-600'

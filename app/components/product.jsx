@@ -63,7 +63,7 @@ const Product = ({ product }) => {
                 {product.images.map(image => (
                   <Tab
                     key={image.id}
-                    className='relative flex h-24 cursor-pointer items-center justify-center rounded-md bg-white text-sm font-medium uppercase text-stone-900 hover:bg-stone-50 focus:outline-none'
+                    className='relative flex h-24 cursor-pointer items-center justify-center rounded-md bg-white text-sm font-medium uppercase text-zinc-900 hover:bg-stone-50 focus:outline-none'
                   >
                     {({ selected }) => (
                       <>
@@ -109,13 +109,13 @@ const Product = ({ product }) => {
 
           {/* Product info */}
           <div className='mt-10 px-4 sm:mt-16 sm:px-0 lg:mt-0'>
-            <h1 className='text-3xl font-bold tracking-tight text-stone-900'>
+            <h1 className='text-3xl font-bold tracking-tight text-zinc-900'>
               {product.name}
             </h1>
 
             <div className='mt-3'>
               <h2 className='sr-only'>Product information</h2>
-              <p className='text-3xl tracking-tight text-stone-900'>
+              <p className='text-3xl tracking-tight text-zinc-900'>
                 {formatCurrency({ amount: product.price })}
               </p>
             </div>
@@ -131,7 +131,7 @@ const Product = ({ product }) => {
                       className={clsx(
                         (product.rating || 4) > rating
                           ? 'text-yellow-500'
-                          : 'text-stone-300',
+                          : 'text-zinc-300',
                         'h-5 w-5 flex-shrink-0'
                       )}
                       aria-hidden='true'
@@ -146,7 +146,7 @@ const Product = ({ product }) => {
               <h3 className='sr-only'>Description</h3>
 
               <div
-                className='space-y-6 text-base text-stone-700'
+                className='space-y-6 text-base text-zinc-700'
                 dangerouslySetInnerHTML={{ __html: product.description }}
               />
             </div>
@@ -177,7 +177,7 @@ const Product = ({ product }) => {
                           <Disclosure.Button className='group relative flex w-full items-center justify-between py-6 text-left'>
                             <span
                               className={clsx(
-                                open ? 'text-sky-600' : 'text-stone-900',
+                                open ? 'text-sky-600' : 'text-zinc-900',
                                 'text-sm font-medium'
                               )}
                             >
@@ -191,7 +191,7 @@ const Product = ({ product }) => {
                                 />
                               ) : (
                                 <PlusIcon
-                                  className='block h-6 w-6 text-stone-400 group-hover:text-stone-500'
+                                  className='block h-6 w-6 text-zinc-400 group-hover:text-zinc-500'
                                   aria-hidden='true'
                                 />
                               )}
